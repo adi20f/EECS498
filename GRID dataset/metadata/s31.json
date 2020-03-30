@@ -1,0 +1,502 @@
+[
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "1",
+        "COND": "l",
+        "UTTERANCE": "sbwc4p",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "2",
+        "COND": "l",
+        "UTTERANCE": "lrbg3n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "3",
+        "COND": "l",
+        "UTTERANCE": "brif9n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "4",
+        "COND": "l",
+        "UTTERANCE": "bbib2p",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "5",
+        "COND": "l",
+        "UTTERANCE": "lrir7n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "6",
+        "COND": "l",
+        "UTTERANCE": "bbin3s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "7",
+        "COND": "l",
+        "UTTERANCE": "pbbr3s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "8",
+        "COND": "l",
+        "UTTERANCE": "bgiv1n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "9",
+        "COND": "l",
+        "UTTERANCE": "prwz1p",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "1",
+        "SUBINDEX": "10",
+        "COND": "l",
+        "UTTERANCE": "prws1n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "1",
+        "COND": "p",
+        "UTTERANCE": "brbn3n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "2",
+        "COND": "p",
+        "UTTERANCE": "lbiy9s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "3",
+        "COND": "p",
+        "UTTERANCE": "swbl2a",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "4",
+        "COND": "p",
+        "UTTERANCE": "brbc7n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "5",
+        "COND": "p",
+        "UTTERANCE": "sgix8s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "6",
+        "COND": "p",
+        "UTTERANCE": "sbwc4p",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "7",
+        "COND": "p",
+        "UTTERANCE": "pgwh6p",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "8",
+        "COND": "p",
+        "UTTERANCE": "srai4a",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "9",
+        "COND": "p",
+        "UTTERANCE": "lrat2n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "2",
+        "SUBINDEX": "10",
+        "COND": "p",
+        "UTTERANCE": "prws1n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "1",
+        "COND": "p",
+        "UTTERANCE": "bgiv1n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "2",
+        "COND": "p",
+        "UTTERANCE": "lbwm2n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "3",
+        "COND": "p",
+        "UTTERANCE": "pwbf8n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "4",
+        "COND": "p",
+        "UTTERANCE": "pbbr3s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "5",
+        "COND": "p",
+        "UTTERANCE": "bwab8p",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "6",
+        "COND": "p",
+        "UTTERANCE": "sbao6a",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "7",
+        "COND": "p",
+        "UTTERANCE": "bbin3s",
+        "STATUS": "WRONG",
+        "TRANSCRIPTION": "(blin)bin3s"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "8",
+        "COND": "p",
+        "UTTERANCE": "pbay5a",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "9",
+        "COND": "p",
+        "UTTERANCE": "prax2n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "3",
+        "SUBINDEX": "10",
+        "COND": "p",
+        "UTTERANCE": "lrbg3n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "1",
+        "COND": "l",
+        "UTTERANCE": "swbl2a",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "2",
+        "COND": "l",
+        "UTTERANCE": "prie9s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "3",
+        "COND": "l",
+        "UTTERANCE": "brbn3n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "4",
+        "COND": "l",
+        "UTTERANCE": "swwz1a",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "5",
+        "COND": "l",
+        "UTTERANCE": "pwiq9p",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "6",
+        "COND": "l",
+        "UTTERANCE": "lrie4a",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "7",
+        "COND": "l",
+        "UTTERANCE": "brbc7n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "8",
+        "COND": "l",
+        "UTTERANCE": "pwil3s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "9",
+        "COND": "l",
+        "UTTERANCE": "bgaq1a",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "4",
+        "SUBINDEX": "10",
+        "COND": "l",
+        "UTTERANCE": "pwws5s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "1",
+        "COND": "l",
+        "UTTERANCE": "lwiuza",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "2",
+        "COND": "l",
+        "UTTERANCE": "lwbu9s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "3",
+        "COND": "l",
+        "UTTERANCE": "swbp7s",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "4",
+        "COND": "l",
+        "UTTERANCE": "swadzp",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "5",
+        "COND": "l",
+        "UTTERANCE": "sgbk5n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "6",
+        "COND": "l",
+        "UTTERANCE": "bwwozp",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "7",
+        "COND": "l",
+        "UTTERANCE": "bgwdzn",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "8",
+        "COND": "l",
+        "UTTERANCE": "swbk4n",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "9",
+        "COND": "l",
+        "UTTERANCE": "pgiaza",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    },
+    {
+        "SPKR": "s31",
+        "BLOCK": "2",
+        "INDEX": "5",
+        "SUBINDEX": "10",
+        "COND": "l",
+        "UTTERANCE": "pgwa5p",
+        "STATUS": "CORRECT",
+        "TRANSCRIPTION": "-"
+    }
+]
