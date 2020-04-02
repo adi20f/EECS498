@@ -45,57 +45,59 @@ def crop_video(ids, directory="data/s1video/", output_dir="data/cropped/", offse
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
-    for idx, id in enumerate(ids[0:10]):
-        if idx % 5 == 0:
-            print("finsihed",idx)
-        if os.path.exists(output_dir + id + ".mp4"):
-            print("Cropped video exists for ", id)
-            continue
+    	for idx, id in enumerate(ids[200:]):
+			if idx % 50 == 0:
+				print("finsihed",idx)
 
-        else: 
-            print("Creating Cropped Video for id ", id)
-        filename = directory + id + ".mpg"
-        # print(filename)
+			try:
+				filename = directory + id + ".mpg"
+				# print(filename)
 
-        vframes,_,_ = torchvision.io.read_video(filename, pts_unit="sec")
-        # video_features.append(vframes)
+				vframes,_,_ = torchvision.io.read_video(filename, pts_unit="sec")
+				# video_features.append(vframes)
 
-        cropped_frames = []
-        for j in range(vframes.shape[0]):
+				cropped_frames = []
+				for j in range(vframes.shape[0]):
 
-            # load the input image, resize it, and convert it to grayscale
-                image = vframes[j].numpy()
-                # print("original shape", image.shape)
-                image = imutils.resize(image, width=500)
-                gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
-                # detect faces in the grayscale image
-                rect = detector(gray, 1)[0]
+					# load the input image, resize it, and convert it to grayscale
+					image = vframes[j].numpy()
+					# print("original shape", image.shape)
+					image = imutils.resize(image, width=500)
+					gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+					# detect faces in the grayscale image
+					rect = detector(gray, 1)[0]
 
-                # determine the facial landmarks for the face region, then
-                # convert the landmark (x, y)-coordinates to a NumPy array
-                shape = predictor(gray, rect)
-                shape = face_utils.shape_to_np(shape)
+					# determine the facial landmarks for the face region, then
+					# convert the landmark (x, y)-coordinates to a NumPy array
+					shape = predictor(gray, rect)
+					shape = face_utils.shape_to_np(shape)
 
-                # Calculate center of bounding rect and use to resize image around mouth
-                # New shape is 120 x 120 like in the paper
-                (x, y, w, h) = cv2.boundingRect(np.array([shape[48:68]]))
-                center_x = x + w//2
-                center_y = y + h//2
+					# Calculate center of bounding rect and use to resize image around mouth
+					# New shape is 120 x 120 like in the paper
+					(x, y, w, h) = cv2.boundingRect(np.array([shape[48:68]]))
+					center_x = x + w//2
+					center_y = y + h//2
 
-                roi = image[center_y-offset:center_y+offset, center_x-offset:center_x+offset]
-                cropped_frames.append(roi)
-                # print("new shape", roi.shape)
+					roi = image[center_y-offset:center_y+offset, center_x-offset:center_x+offset]
+					cropped_frames.append(roi)
+					# print("new shape", roi.shape)
 
-                # show the particular face part
-              #  cv2.imshow("ROI", roi)
-              #  cv2.waitKey(0)
-                # cv2.destroyAllWindows()
+					# show the particular face part
+					# cv2.imshow("ROI", roi)
+					# cv2.waitKey(0)
+					# cv2.destroyAllWindows()
 
-        # Convert to tensor
-        cropped_video = torch.LongTensor(cropped_frames)
+				# Convert to tensor
+				cropped_video = torch.LongTensor(cropped_frames)
 
-        print(cropped_video.shape)
-        torchvision.io.write_video(output_dir + id + ".mp4", cropped_video, 21)
+				# print(cropped_video.shape)
+				torchvision.io.write_video(output_dir + id + ".mp4", cropped_video, 21)
+
+			except:
+				print("error on ", id)
+				error_files.append(id)
+
+		print(error_files)
 
 
         # video_features = torch.stack(video_features)
@@ -131,21 +133,21 @@ def get_word_splits(align_file):
 def load_video(ids, align_dir="data/align/",input_dir="data/cropped/", out_dir="data/processed/"):
     print("num of vids: ", len(ids))
 
-    # loop through all ids  
-    for i,id in enumerate(ids[0:10]): 
+    # loop through all ids
+    for i,id in enumerate(ids[0:10]):
         # create video file and alignment filenames
-        infile = input_dir + id + ".mp4"   
+        infile = input_dir + id + ".mp4"
         align_file = align_dir + id + ".align"
 
         #create the output directory if it does not already exist
-        out_dir_id = out_dir + id 
+        out_dir_id = out_dir + id
         try:
             os.mkdir(out_dir_id)
             print("directory created for id: ", id)
         except:
             print("directory already created for id: ", id)
 
-        # load in the video and the audio/frame splits 
+        # load in the video and the audio/frame splits
         vframes,_,_ = torchvision.io.read_video(infile, pts_unit="sec")
         processed_frames = preprocess_frames(vframes, out_dir_id + "/")
         print(processed_frames.shape)
@@ -153,5 +155,5 @@ def load_video(ids, align_dir="data/align/",input_dir="data/cropped/", out_dir="
 if __name__ == "__main__":
     ids = get_ids()
     # load_audio(ids,"data/s1audio/")
-    crop_video(ids, "data/s1video/")
+    # crop_video(ids, "data/s1video/")
     load_video(ids)
