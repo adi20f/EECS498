@@ -64,7 +64,7 @@ class FCN(nn.Module):
 		self.batchNorm3= nn.BatchNorm2d(64)
 		self.conv4 = nn.Conv2d(64,64,3)
 		self.batchNorm4= nn.BatchNorm2d(64)
-		self.fc1 = nn.Linear(64*1*315,512)
+		self.fc1 = nn.Linear(64*1*5,512)
 		self.fc2 = nn.Linear(512,8)
 		self.sig = nn.Sigmoid()
 		self.relu = nn.ReLU()
@@ -90,7 +90,7 @@ class FCN(nn.Module):
 		x = self.mp1(x)
 		x = self.drop(x)
 
-		x = x.view(-1,64*1*315)
+		x = x.view(-1,64*1*5)
 		x = self.fc1(x)
 		x = self.drop(x)
 		x = self.fc2(x)
