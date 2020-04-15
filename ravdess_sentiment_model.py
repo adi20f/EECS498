@@ -111,32 +111,29 @@ def training(model,loader,val,learning_rate,decay,num_epochs=20):
 		val_total = 0
 		train_correct = 0
 		train_total = 0
-		for train, val_set in tqdm(zip(loader,val),total=len(val)):
-			inputs = train[0].to(device)
-			labels = train[1].to(device)
+
+		model.eval()
+		for inputs,labels in tqdm(val):
+			val_inputs = inputs.to(device)
+			val_labels = labels.to(device)
+			val_out = model(val_inputs)
+
+			val_correct += (torch.argmax(val_out,dim=1)==val_labels).sum().item()
+			val_total += len(val_labels)
+			running_val_loss.append(criterion(val_out,val_labels).item())
+			
+		model.train()
+		for inputs,labels in tqdm(loader):
+			inputs = inputs.to(device)
+			labels = labels.to(device)
 			optimizer.zero_grad()
 			out = model(inputs)
 			loss = criterion(out,labels)
 			loss.backward()
 			optimizer.step()
 			running_train_loss.append(loss.item())
-			val_inputs = val_set[0].to(device)
-			val_labels = val_set[1].to(device)
-			val_out = model(val_inputs)
-
 			train_correct += (torch.argmax(out,dim=1)==labels).sum().item()
 			train_total += len(labels)
-
-			val_correct += (torch.argmax(val_out,dim=1)==val_labels).sum().item()
-			val_total += len(val_labels)
-			running_val_loss.append(criterion(val_out,val_labels).item())
-
-			del inputs
-			del labels
-			del out
-			del loss
-			del val_inputs
-			del val_labels
 
 		val_acc.append(float(val_correct)/val_total)
 		train_acc.append(float(train_correct)/train_total)
